@@ -8,7 +8,7 @@ BUILD_PATH = .build/release/$(TOOL_NAME)
 LIB_INSTALL_PATH = $(PREFIX)/lib/danger
 TAR_FILENAME = $(TOOL_NAME)-$(VERSION).tar.gz
 
-SWIFT_LIB_FILES = .build/release/libDanger.dylib .build/release/Danger.swiftdoc .build/release/Danger.swiftmodule
+SWIFT_LIB_FILES = .build/release/libDanger.so .build/release/Danger.swiftdoc .build/release/Danger.swiftmodule
 
 install: build
 	mkdir -p $(PREFIX)/bin
