@@ -18,7 +18,7 @@ install: build
 
 build:
 	swift package clean
-	swift build -c release --static-swift-stdlib
+	swift build --disable-sandbox -c release --static-swift-stdlib
 
 uninstall:
 	rm -f $(INSTALL_PATH)
